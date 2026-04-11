@@ -11,8 +11,8 @@
     </header>
     <section>
       <form action="" method="get">
-        <fieldset>
-          <!-- Dados Pessoais -->
+        <!-- <fieldset>
+          Dados Pessoais
           <legend>Dados Pessoas</legend>
           <label for="name">Nome</label>
           <input type="text" name="name" id="" required />
@@ -31,7 +31,66 @@
           <br />
           <input type="file" name="imagem" id="" accept="image/*" />
           <br />
+        </fieldset> -->
+        <fieldset>
+          <legend>Perfil</legend>
+          <p>Genêro:</p>
+
+          <input type="radio" name="userGen" value="feminino" id="" />
+          <label for="">Feminino</label>
+
+          <input type="radio" name="userGen" value="masculino" id="" />
+          <label for="">Masculino</label>
+
+          <input type="radio" name="userGen" value="notInformed" id="" />
+          <label for="">Prefiro não informar</label>
+
+          <br />
+
+          <label for="">Estado civil: </label>
+          <select name="estadoCivil" id="">
+            <option value="notInformed">Selecione...</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="casado">União estável</option>
+          </select>
+
+          <label for="">Estado</label>
+          <select name="estado" id="estado" required>
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
         </fieldset>
+
+        <input type="text" name="cidade" id="" placeholder="Informe sua cidade" />
+
         <button type="submit">Enviar</button>
       </form>
     </section>
