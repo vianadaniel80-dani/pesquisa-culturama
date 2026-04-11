@@ -9,13 +9,13 @@
     <header>
       <h1>Pesquisa Culturama</h1>
     </header>
-    <main>
-      <fieldset>
-        <!-- Dados Pessoais -->
-        <legend>Dados Pessoas</legend>
-        <form action="" method="get">
+    <section>
+      <form action="" method="get">
+        <fieldset>
+          <!-- Dados Pessoais -->
+          <legend>Dados Pessoas</legend>
           <label for="name">Nome</label>
-          <input type="text" name="name" id="" />
+          <input type="text" name="name" id="" required />
           <br />
           <label for="age">Idade</label>
           <input type="number" name="age" id="" min="12" max="100" />
@@ -24,14 +24,16 @@
           <input type="date" name="dataNascimento" id="" />
           <br />
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="" />
+          <input type="email" name="email" id="" required />
           <br />
           <label for="tel">Telefone</label>
           <input type="tel" name="telefone" id="" pattern="[0-9]{11}" placeholder=" (XX) XXXXX-XXXX " />
           <br />
           <input type="file" name="imagem" id="" accept="image/*" />
-        </form>
-      </fieldset>
-    </main>
+          <br />
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </body>
 </html>
