@@ -36,14 +36,14 @@
           <legend>Perfil</legend>
           <p>Genêro:</p>
 
-          <input type="radio" name="userGen" value="feminino" id="" />
-          <label for="">Feminino</label>
+          <input type="radio" name="userGen" value="feminino" id="feminino" />
+          <label for="feminino">Feminino</label>
 
-          <input type="radio" name="userGen" value="masculino" id="" />
-          <label for="">Masculino</label>
+          <input type="radio" name="userGen" value="masculino" id="masculino" />
+          <label for="masculino">Masculino</label>
 
-          <input type="radio" name="userGen" value="notInformed" id="" />
-          <label for="">Prefiro não informar</label>
+          <input type="radio" name="userGen" value="notInformed" id="notInformed" />
+          <label for="notInformed">Prefiro não informar</label>
 
           <br />
 
@@ -87,9 +87,25 @@
             <option value="SE">Sergipe</option>
             <option value="TO">Tocantins</option>
           </select>
+
+          <input type="text" name="cidade" id="" placeholder="Informe sua cidade" />
         </fieldset>
 
-        <input type="text" name="cidade" id="" placeholder="Informe sua cidade" />
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Sociais</p>
+          <input type="checkbox" name="social" id="instragram" value="instragram" />
+          <label for="instragram">Instragram</label>
+
+          <input type="checkbox" name="social" id="facebook" value="facebook" />
+          <label for="facebook">Facebook</label>
+
+          <input type="checkbox" name="social" id="twitter" value="twitter" />
+          <label for="twitter">Twitter</label>
+
+          <input type="checkbox" name="social" id="linkedin" value="linkedin" />
+          <label for="linkedin">Instagran</label>
+        </fieldset>
 
         <button type="submit">Enviar</button>
       </form>
