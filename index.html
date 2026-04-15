@@ -124,17 +124,23 @@
 
         <fieldset>
           <legend>Opinião</legend>
-          <label for="nivelSatisfacao">Satisfação: </label>
-          <select name="selecaoSatisfacao" id="nivelSatisfacao">
-            <option value="vazio">Selecione...</option>
-            <option value="otimo">Ótima</option>
-            <option value="boa">Boa</option>
-            <option value="regular">Regular</option>
-            <option value="ruim">Ruim</option>
-          </select>
+          <p>O que você acha da qualidade do nosso serviço?</p>
+          <input type="checkbox" name="opiniao" id="otimo" value="otimo" />
+          <label for="instragram">Ótimo</label>
           <br />
-          <label for="comentarioUsuario">Comentário: </label>
-          <input type="text" name="comentario" id="comentarioUsuario" placeholder="Digite aqui seu comentário.." />
+          <input type="checkbox" name="opiniao" id="bom" value="bom" />
+          <label for="bom">Bom</label>
+          <br />
+          <input type="checkbox" name="regular" id="regular" value="regular" />
+          <label for="regular">Regular</label>
+          <br />
+
+          <input type="checkbox" name="ruim" id="ruim" value="ruim" />
+          <label for="ruim">Ruim</label>
+          <br />
+          <br />
+          <label for="comentariosUser">Escreva sua opinião: </label>
+          <textarea name="comentarios" id="comentariosUser" placeholder="Digite aqui sua opinião..."></textarea>
         </fieldset>
 
         <button type="submit">Enviar</button>
