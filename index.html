@@ -3,159 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./culturama-favico.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pesquisa Culturama</title>
   </head>
   <body>
-    <header>
-      <h1>Pesquisa Culturama</h1>
-    </header>
-    <section>
-      <form action="" method="get">
-        <fieldset>
-          <!-- Dados Pessoais -->
-          <legend>Dados Pessoas</legend>
-          <label for="name">Nome</label>
-          <input type="text" name="name" id="" required />
-          <br />
-          <label for="age">Idade</label>
-          <input type="number" name="age" id="" min="12" max="100" />
-          <br />
-          <label for="dataNascimento">Data de Nascimento</label>
-          <input type="date" name="dataNascimento" id="" />
-          <br />
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="" required />
-          <br />
-          <label for="tel">Telefone</label>
-          <input type="tel" name="telefone" id="" pattern="[0-9]{11}" placeholder=" (XX) XXXXX-XXXX " />
-          <br />
-          <input type="file" name="imagem" id="" accept="image/*" />
-          <br />
-        </fieldset>
-        <fieldset>
-          <legend>Perfil</legend>
-          <p>Genêro:</p>
+    <main>
+      <header>
+        <img src="./assets/logo-culturama.png" alt="Logo Culturama" />
+        <h1>Pesquisa Culturama</h1>
+      </header>
+      <section>
+        <form action="" method="get">
+          <fieldset>
+            <!-- Dados Pessoais -->
+            <legend>Dados Pessoas</legend>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="" required />
+            <br />
+            <label for="age">Idade</label>
+            <input type="number" name="age" id="" min="12" max="100" />
+            <br />
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" name="dataNascimento" id="" />
+            <br />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="" required />
+            <br />
+            <label for="tel">Telefone</label>
+            <input type="tel" name="telefone" id="" pattern="[0-9]{11}" placeholder=" (XX) XXXXX-XXXX " />
+            <br />
+            <input type="file" name="imagem" id="" accept="image/*" />
+            <br />
+          </fieldset>
+          <fieldset>
+            <legend>Perfil</legend>
+            <p>Genêro:</p>
 
-          <input type="radio" name="userGen" value="feminino" id="feminino" />
-          <label for="feminino">Feminino</label>
+            <input type="radio" name="userGen" value="feminino" id="feminino" />
+            <label for="feminino">Feminino</label>
 
-          <input type="radio" name="userGen" value="masculino" id="masculino" />
-          <label for="masculino">Masculino</label>
+            <input type="radio" name="userGen" value="masculino" id="masculino" />
+            <label for="masculino">Masculino</label>
 
-          <input type="radio" name="userGen" value="notInformed" id="notInformed" />
-          <label for="notInformed">Prefiro não informar</label>
+            <input type="radio" name="userGen" value="notInformed" id="notInformed" />
+            <label for="notInformed">Prefiro não informar</label>
 
-          <br />
+            <br />
 
-          <label for="">Estado civil: </label>
-          <select name="estadoCivil" id="">
-            <option value="notInformed">Selecione...</option>
-            <option value="solteiro">Solteiro</option>
-            <option value="casado">Casado</option>
-            <option value="divorciado">Divorciado</option>
-            <option value="casado">União estável</option>
-          </select>
+            <label for="">Estado civil: </label>
+            <select name="estadoCivil" id="">
+              <option value="notInformed">Selecione...</option>
+              <option value="solteiro">Solteiro</option>
+              <option value="casado">Casado</option>
+              <option value="divorciado">Divorciado</option>
+              <option value="casado">União estável</option>
+            </select>
 
-          <label for="">Estado</label>
-          <select name="estado" id="estado" required>
-            <option value="">Selecione o estado</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-          </select>
+            <label for="">Estado</label>
+            <select name="estado" id="estado" required>
+              <option value="">Selecione o estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
 
-          <input type="text" name="cidade" id="" placeholder="Informe sua cidade" />
-        </fieldset>
+            <input type="text" name="cidade" id="" placeholder="Informe sua cidade" />
+          </fieldset>
 
-        <fieldset>
-          <legend>Hábitos</legend>
-          <p>Redes Sociais</p>
-          <input type="checkbox" name="social" id="instragram" value="instragram" />
-          <label for="instragram">Instragram</label>
+          <fieldset>
+            <legend>Hábitos</legend>
+            <p>Redes Sociais</p>
+            <input type="checkbox" name="social" id="instragram" value="instragram" />
+            <label for="instragram">Instragram</label>
 
-          <input type="checkbox" name="social" id="facebook" value="facebook" />
-          <label for="facebook">Facebook</label>
+            <input type="checkbox" name="social" id="facebook" value="facebook" />
+            <label for="facebook">Facebook</label>
 
-          <input type="checkbox" name="social" id="twitter" value="twitter" />
-          <label for="twitter">Twitter</label>
+            <input type="checkbox" name="social" id="twitter" value="twitter" />
+            <label for="twitter">Twitter</label>
 
-          <input type="checkbox" name="social" id="linkedin" value="linkedin" />
-          <label for="linkedin">Linkedin</label>
-          <br />
+            <input type="checkbox" name="social" id="linkedin" value="linkedin" />
+            <label for="linkedin">Linkedin</label>
+            <br />
 
-          <label for="musicalEstilo">Estilo musical: </label>
-          <input list="estiloMusical" type="text" name="usuarioEstiloMusical" id="musicalEstilo" />
+            <label for="musicalEstilo">Estilo musical: </label>
+            <input list="estiloMusical" type="text" name="usuarioEstiloMusical" id="musicalEstilo" />
 
-          <datalist id="estiloMusical">
-            <option value="Rock"></option>
-            <option value="Samba"></option>
-            <option value="Sertanejo"></option>
-            <option value="Black"></option>
-            <option value="Pop"></option>
-          </datalist>
-          <br />
-          <label for="corFavotira">Cor favorita: </label>
-          <input type="color" name="favotiraCor" id="musicalEstilo" />
-        </fieldset>
+            <datalist id="estiloMusical">
+              <option value="Rock"></option>
+              <option value="Samba"></option>
+              <option value="Sertanejo"></option>
+              <option value="Black"></option>
+              <option value="Pop"></option>
+            </datalist>
+            <br />
+            <label for="corFavotira">Cor favorita: </label>
+            <input type="color" name="favotiraCor" id="musicalEstilo" />
+          </fieldset>
 
-        <fieldset>
-          <legend>Opinião</legend>
-          <p>O que você acha da qualidade do nosso serviço?</p>
-          <input type="checkbox" name="opiniao" id="otimo" value="otimo" />
-          <label for="instragram">Ótimo</label>
-          <br />
-          <input type="checkbox" name="opiniao" id="bom" value="bom" />
-          <label for="bom">Bom</label>
-          <br />
-          <input type="checkbox" name="regular" id="regular" value="regular" />
-          <label for="regular">Regular</label>
-          <br />
+          <fieldset>
+            <legend>Opinião</legend>
+            <p>O que você acha da qualidade do nosso serviço?</p>
+            <input type="radio" name="opiniao" id="otimo" value="otimo" />
+            <label for="otimo">Ótimo</label>
+            <br />
+            <input type="radio" name="opiniao" id="bom" value="bom" />
+            <label for="bom">Bom</label>
+            <br />
+            <input type="radio" name="opiniao" id="regular" value="regular" />
+            <label for="regular">Regular</label>
+            <br />
 
-          <input type="checkbox" name="ruim" id="ruim" value="ruim" />
-          <label for="ruim">Ruim</label>
-          <br />
-          <br />
-          <label for="comentariosUser">Escreva sua opinião: </label>
-          <textarea name="comentarios" id="comentariosUser" placeholder="Digite aqui sua opinião..."></textarea>
-        </fieldset>
+            <input type="radio" name="opiniao" id="ruim" value="ruim" />
+            <label for="ruim">Ruim</label>
+            <br />
+            <br />
+            <label for="comentariosUser">Escreva sua opinião: </label>
+            <textarea name="comentarios" id="comentariosUser" placeholder="Digite aqui sua opinião..."></textarea>
+          </fieldset>
 
-        <fieldset>
-          <legend>Confirmações</legend>
-          <input type="checkbox" name="participaPesquisa" id="aceitePesquisa" />
-          <label for="aceitePesquisa">Eu aceito participar da pesquisa</label>
-          <br />
+          <fieldset>
+            <legend>Confirmações</legend>
+            <input type="checkbox" name="participaPesquisa" id="aceitePesquisa" />
+            <label for="aceitePesquisa">Eu aceito participar da pesquisa</label>
+            <br />
 
-          <input type="checkbox" name="receberEmail" id="emailPesquisa" />
-          <label for="emailPesquisa">Desejo receber o resultado por email</label>
-        </fieldset>
+            <input type="checkbox" name="receberEmail" id="emailPesquisa" />
+            <label for="emailPesquisa">Desejo receber o resultado por email</label>
+          </fieldset>
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
-      </form>
-    </section>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
