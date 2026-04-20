@@ -37,7 +37,8 @@
             <input type="email" name="email" id="emailUsuario" required />
             <br />
             <label for="telefoneUsuario">Telefone</label>
-            <input type="tel" name="telefone" id="telefoneUsuario" pattern="[0-9]{11}" placeholder=" (XX) XXXXX-XXXX " />
+            <input type="tel" name="telefone" id="telefoneUsuario" aria-describedby="helpTelefone" pattern="[0-9]{11}" placeholder=" (XX) XXXXX-XXXX " />
+            <small id="helpTelefone">Preencha o número de telefone celualar com 11 digitos - Exemplo: (11) 98999-9999</small>
             <br />
             <label for="imagemUsuario">Selecione a imagem</label>
             <input type="file" name="imagem" id="imagemUsuario" accept="image/*" />
@@ -165,8 +166,8 @@
             <label for="emailPesquisa">Desejo receber o resultado por email</label>
           </fieldset>
 
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+          <button type="submit" aria-label="Enviar os dados do formulário">Enviar</button>
+          <button type="reset" aria-label="Limpar os dados do formulário">Limpar</button>
         </form>
       </section>
     </main>
