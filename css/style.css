@@ -46,7 +46,7 @@ legend {
 
 label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input, select, textarea {
@@ -58,6 +58,7 @@ input, select, textarea {
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
+  margin-bottom: 4px;
 }
 
 input[type="color"] {
